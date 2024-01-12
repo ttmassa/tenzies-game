@@ -15,7 +15,7 @@ export default function App() {
         return newDice
     }
 
-    function changeDice() {
+    function rollDice() {
         setDice(allNewDice())
     }
 
@@ -26,7 +26,7 @@ export default function App() {
             <div className='dice--container'>
                 {diceElement}
             </div>
-            <button className='roll-button' onClick={changeDice}>Roll</button>
+            <button className='roll-button' onClick={rollDice}>Roll</button>
         </main>
     )
 }
