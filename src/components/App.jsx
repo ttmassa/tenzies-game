@@ -15,7 +15,7 @@ export default function App() {
                 {
                     id: nanoid(),
                     value: (Math.ceil(Math.random() * 6)), 
-                    isHeld: true
+                    isHeld: false
                 }
             )
         }
