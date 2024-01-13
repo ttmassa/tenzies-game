@@ -5,7 +5,7 @@ export default function Die(props) {
         backgroundColor: props.status ? "#59E391" : "white"
     }
     return (
-        <div className='die-face' style={styles}>
+        <div className='die-face' style={styles} onClick={props.hold}>
             <h2 className='die-number'>{props.value}</h2>
         </div>
     )
