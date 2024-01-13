@@ -15,7 +15,7 @@ export default function App() {
                 {
                     id: nanoid(),
                     value: (Math.ceil(Math.random() * 6)), 
-                    isHeld: false
+                    isHeld: true
                 }
             )
         }
@@ -23,12 +23,17 @@ export default function App() {
     }
 
     function rollDice() {
-        setDice(allNewDice())
+        const updatedDice = dice.map(die => {
+            return {
+                ...die,
+                value: die.isHeld ? die.value : (Math.ceil(Math.random() * 6)),
+            }
+        })
+        setDice(updatedDice)
     }
 
     console.log(dice)
-
-    const diceElement = dice.map(die => <Die key={die.id} value={die.value}/>)
+    const diceElement = dice.map(die => <Die key={die.id} value={die.value} status={die.isHeld}/>)
     
     return (
         <main>

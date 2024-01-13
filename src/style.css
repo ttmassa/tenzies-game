@@ -41,6 +41,10 @@ main {
     cursor: pointer;
 }
 
+.die-face.isHeld {
+    background-color: #59E391;
+}
+
 .die-number {
     font-size: 2rem;
 }
