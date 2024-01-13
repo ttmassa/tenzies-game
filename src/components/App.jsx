@@ -1,11 +1,18 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../style.css'
 import Die from './Die.jsx'
 import { nanoid } from 'nanoid'
 
 export default function App() {
     const [dice, setDice] = useState(allNewDice())
+    const [tenzies, setTenzies] = useState(false)
+
+    useEffect(() => {
+        if (dice.every(die => die.isHeld) && dice.every(die => die.value === dice[0].value)) {
+            setTenzies(true)
+        }
+    }, [dice])
 
 
     function allNewDice() {
