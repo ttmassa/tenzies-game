@@ -7,7 +7,7 @@ import Confetti from 'react-confetti'
 
 /*
 To-do:
-- Replace numbers by dots
+- Replace numbers by dots (done)
 - Display best score (localStorage)
 - Display time to beat
 
@@ -56,7 +56,7 @@ export default function App() {
 
         setDice(updatedDice)
     }
-    
+
     function resetGame() {
         setTenzies(false)
         setDice(allNewDice())
