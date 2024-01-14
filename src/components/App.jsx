@@ -5,6 +5,14 @@ import Die from './Die.jsx'
 import { nanoid } from 'nanoid'
 import Confetti from 'react-confetti'
 
+/*
+To-do:
+- Replace numbers by dots
+- Display best score (localStorage)
+- Display time to beat
+
+*/
+
 export default function App() {
     const [dice, setDice] = useState(allNewDice())
     const [tenzies, setTenzies] = useState(false)
@@ -48,7 +56,7 @@ export default function App() {
 
         setDice(updatedDice)
     }
-
+    
     function resetGame() {
         setTenzies(false)
         setDice(allNewDice())

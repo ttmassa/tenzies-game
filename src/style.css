@@ -40,6 +40,13 @@ main {
     grid-gap: 30px;
 }
 
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
 .die-face {
     display: flex;
     align-items: center;
@@ -50,9 +57,53 @@ main {
     border-radius: 3.81px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    position: relative;
 }
-.die-number {
-    font-size: 2rem;
+
+.die-face2 .dot1, 
+.die-face3 .dot1,
+.die-face4 .dot1,
+.die-face5 .dot1,
+.die-face6 .dot1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.die-face2 .dot2, 
+.die-face3 .dot3,
+.die-face4 .dot4,
+.die-face5 .dot5,
+.die-face6 .dot6 {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+}
+
+.die-face4 .dot2,
+.die-face5 .dot2,
+.die-face6 .dot2 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.die-face4 .dot3,
+.die-face5 .dot3,
+.die-face6 .dot5 {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+}
+
+.die-face6 .dot3 {
+    position: absolute;
+    left: 20%;
+}
+
+.die-face6 .dot4 {
+    position: absolute;
+    right: 20%;
 }
 
 .roll-button {
