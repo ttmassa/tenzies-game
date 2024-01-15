@@ -4,9 +4,13 @@
 }
 
 body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0B2434;
     margin: 0;
-    padding: 50px;
+    padding: 60px;
     font-family: 'Karla', sans-serif;
 }
 
