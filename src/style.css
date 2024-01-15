@@ -41,6 +41,17 @@ main {
     font-size: 1.1rem;
 }
 
+.timer {
+    text-align: end;
+    width: 200px;
+    display: flex;  
+    justify-content: flex-end;  
+  }
+
+.time {
+    width: 25px;
+}
+
 .dice--container {
     display: grid;
     grid-template: auto auto / repeat(5, 1fr);
