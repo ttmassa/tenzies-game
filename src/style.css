@@ -48,7 +48,7 @@ main {
     justify-content: flex-end;  
   }
 
-.time {
+.time, .bestTime {
     width: 25px;
 }
 
